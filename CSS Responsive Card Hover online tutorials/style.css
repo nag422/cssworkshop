@@ -23,4 +23,98 @@ body
     align-items: center;
     border-radius: 5px;
     background: linear-gradient(135deg, #d41e31, #491f8f);
+    
+}
+
+.card img {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+       
+}
+.card:hover img {
+    left: 80%;
+    height: 460px;
+}
+
+.card .content {
+    position: relative;
+    width: 50%;
+    height:70%;
+    left: 20%;    
+    padding: auto 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card:hover .content 
+{
+    opacity: 1;
+    visibility: visible;
+    left: 2%;
+}
+.card .content h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p
+{
+    color: #fff;
+    font-size: medium;
+}
+.card .content a {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    top:4%;
+
+}
+
+@media (max-width: 991px)
+{
+    .card
+    {
+        position: relative;
+        width: auto;
+        max-width: 500px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+    .card:hover {
+        height: 600px;
+    }
+    .card:hover img {
+        left: 50%;
+        height: 350px;
+    }
+    .card .content
+    {
+        width: 100%;
+        left: 0;
+        padding: 40px;;
+    }
+}
+@media (max-width: 420px) {
+    .card {
+        max-width: auto;
+    }
+    .card .content {
+        padding: 30px;
+    }
+    .card:hover img{
+        height:300px
+    }
 }

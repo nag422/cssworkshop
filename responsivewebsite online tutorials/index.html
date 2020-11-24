@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Online tutorials Responsive Websites</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div onclick="toggle();" class="toggle"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Future on <br>your Hand</h2>
+                <p>Loremipsum.com is hosted in United States . Loremipsum.com doesn't use HTTPS protocol.
+                     Number of used technologies: 1. First technologies: Html, Number of used javascripts: 0. 
+                    Number of used analytics tools: 0. Its server type is: Apache.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgBx">
+                <img src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/Rashmika-502740871-1586069005.jpg">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="https://i.pinimg.com/originals/b1/85/9b/b1859bdac7d42d4a0a5a673bc4265564.png" /></a></li>
+            <li><a href="#"><img src="https://png.pngtree.com/element_our/sm/20180626/sm_5b32227ca3eb9.jpg" /></a></li>
+            <li><a href="#"><img src="https://img.pngio.com/png-google-plus-logo-clipart-1254-free-icons-and-png-backgrounds-google-plus-logo-png-692_692.png" /></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+
+
+    <script>
+        const toggle = () => {
+            console.log('toogled')
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

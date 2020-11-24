@@ -1,2 +1,0 @@
-# cssworkshop
-Pure Css Scripts
